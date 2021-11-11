@@ -3,7 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { 
   FooterWrapper,
   FooterSocialWrapper, 
-  FooterSocialIcons
+  FooterSocialIcons,
+  P
 } from '../elements'
 
 
@@ -30,20 +31,47 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterSocialWrapper>
         <FooterSocialIcons>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src={data.facebook.publicURL} alt="Facebook logo" />
+          <a 
+            href="https://facebook.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src={data.facebook.publicURL} 
+              alt="Facebook logo" 
+            />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src={data.linkedin.publicURL} alt="linkedin logo" />
+          <a 
+            href="https://facebook.com" 
+            target="_blank" rel="noopener noreferrer"
+          >
+            <img 
+              src={data.linkedin.publicURL} 
+              alt="linkedin logo" 
+            />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src={data.instagram.publicURL} alt="instagram logo" />
+          <a 
+            href="https://facebook.com" 
+            target="_blank" rel="noopener noreferrer"
+          >
+            <img 
+              src={data.instagram.publicURL} 
+              alt="instagram logo" 
+            />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src={data.twitter.publicURL} alt="twitter logo" />
+          <a 
+            href="https://facebook.com" 
+            target="_blank" rel="noopener noreferrer"
+          >
+            <img 
+              src={data.twitter.publicURL} 
+              alt="twitter logo" 
+            />
           </a>
         </FooterSocialIcons>
-        <p>c 2021 Compagny.All right reserved.</p>
+        <P size="xSmall" color="dark3">
+          © 2021 Compagny.All right reserved.
+        </P>
       </FooterSocialWrapper>
     </FooterWrapper>
   )
